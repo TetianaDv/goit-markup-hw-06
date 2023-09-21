@@ -1,0 +1,38 @@
+.section-first {
+  background-color: #2e2f42;
+  background-position: center;
+  /*background-position: 50% 50% center; */
+  background-size: cover;
+  padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-image.jpg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  margin: auto;
+}
+
+.section-info {
+  padding: 120px 0;
+}
+
+.s-item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+
+.section-team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.section-portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
