@@ -139,7 +139,7 @@ body {
 .container {
   padding: 0 16px;
   margin: 0 auto;
-  max-width: 1158px;
+  max-width: 1158;
   width: 100%;
 }
 
@@ -218,7 +218,7 @@ margin: auto;
 
 .team-list {
   display: flex;
-  gap: 24px;
+  gap: 64px;
   padding-left: 0;
 }
 
@@ -321,6 +321,8 @@ width: calc((100% - 72px) / 4);
 }
 
 
+
+
 .btn:hover,
 .btn:focus {
   background-color: #404bbf;
@@ -362,7 +364,6 @@ width: calc((100% - 72px) / 4);
 .f-team-icon {
 display: flex;
 gap: 16px;
-justify-content: center;
 }
 
 .container-h {
@@ -806,7 +807,7 @@ background-color: #4D5AE5;
 }
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1157px) {
  .section-first {
     padding: 112px 0;
   }
@@ -829,15 +830,17 @@ background-color: #4D5AE5;
   .about-us-list {
     flex-wrap: wrap;
     justify-content: space-between;
-    row-gap: 72px
+    row-gap: 72px;
   }
   .about-item {
-    width: 48%;
+    width: calc((100% - 24px)/4);
   }
   .team-list {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 64px;
   }
+  
   .members {
     width: auto;
   }
@@ -845,9 +848,15 @@ background-color: #4D5AE5;
     row-gap: 72px;
   }
   .list {
-    max-width: 356px;
+    max-width: calc((100% - 24) / 2);
     width: 100%;
   }
+
+  .img-portfolio {
+    position: relative;
+    overflow: hidden;
+  } 
+  
   .footer {
     padding: 96px 0;
   }
@@ -860,10 +869,12 @@ background-color: #4D5AE5;
   .f-container,
   .f-svg-list {
     margin-right: 0;
+    width: 264px;
+    flex-direction: start;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .header {
     height: 56px;
     display: flex;
