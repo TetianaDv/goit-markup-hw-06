@@ -993,3 +993,26 @@ text-align: center;
     padding: 72px 16px 24px 16px;
   }
 }
+
+
+
+.hero{background-image: url(./mobile@1x);}
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+.hero{background-image: url(./mobile@2x);}
+}
+
+
+@media screen and (min-width: 768px) {
+  .hero{background-image: url(./tablet@1x);}
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), (min-resolution: 192dpi) and (min-width: 768px) {
+  .hero{background-image: url(./tablet2x@2x);}
+  }
+
+
+  @media screen and (min-width: 1158px) {
+  .hero{background-image: url(./hero-image@1x);}
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px), (min-resolution: 192dpi) and (min-width: 1158px) {
+  .hero{background-image: url(./hero-image2x@2x)};
+  }
