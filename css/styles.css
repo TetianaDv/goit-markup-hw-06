@@ -39,7 +39,7 @@ ul, ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 .list,
@@ -200,7 +200,7 @@ margin: auto;
   line-height: 1.5;
   letter-spacing: 0.02em;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .s-item {
@@ -219,7 +219,7 @@ margin: auto;
 
 .team-list {
   display: flex;
-  gap: 64px;
+  gap: 64px 24px;
   padding-left: 0;
 }
 
@@ -243,6 +243,7 @@ width: calc((100% - 72px) / 4);
 
 .members-position {
   padding: 32px 16px;
+
 }
 
 .headline {
@@ -359,14 +360,17 @@ width: calc((100% - 72px) / 4);
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  text-align: left;
+  font-weight: 400;
+font-size: 16px;
+
 }
 
 .f-team-icon {
 display: flex;
 gap: 16px;
+justify-content: center;
 }
 
 .container-h {
@@ -879,7 +883,7 @@ background-color: #4D5AE5;
     row-gap: 72px;
   }
   .about-item {
-    width: calc((100% - 24px)/4);
+    width: calc((100% - 24px)/2);
   }
   .team-list {
     flex-wrap: wrap;
@@ -894,8 +898,8 @@ background-color: #4D5AE5;
     row-gap: 72px;
   }
   .list {
-    max-width: calc((100% - 24) / 2);
-    width: 100%;
+    max-width: calc((100% - 24px) / 2);
+    
   }
 
   .img-portfolio {
@@ -916,7 +920,7 @@ background-color: #4D5AE5;
   .f-svg-list {
     margin-right: 0;
     width: 264px;
-    flex-direction: start;
+    text-align: center;
   }
 }
 
@@ -938,10 +942,6 @@ background-color: #4D5AE5;
   }
   .section-first {
     padding: 72px 0;
-  }
-
-  .mobile-button {
-    display: block;
   }
 
   .solutions {
@@ -975,6 +975,11 @@ background-color: #4D5AE5;
   .subscribe-input {
     width: 100%;
   }
+
+  .f-container{
+text-align: center;
+  }
+
   .footer-logo,
   .f-media,
   .subscribe-text {
@@ -988,4 +993,3 @@ background-color: #4D5AE5;
     padding: 72px 16px 24px 16px;
   }
 }
-
